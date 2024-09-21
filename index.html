@@ -1,4 +1,4 @@
-<html><head>
+<html><head><base href="https://websimcreationengine.ai/">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>線上疫苗填寫使用說明介紹影片 - 多畫質播放器</title>
@@ -259,16 +259,31 @@
             width: 100%;
             margin: 5px 0;
         }
+
+        .header h1 {
+            font-size: 20px;
+        }
+
+        .description h2 {
+            font-size: 18px;
+        }
+
+        .description ul {
+            padding-left: 15px;
+        }
+
+        .description li {
+            font-size: 14px;
+        }
     }
 </style>
 </head>
 <body>
 <header class="site-header">
     <div class="header-content">
-        <img src="https://websimcreationengine.ai/logo.svg" alt="線上疫苗填寫系統 Logo" class="logo">
         <nav>
             <ul>
-                <li><a href="/">首頁</a></li>
+                <li><a href="">首頁</a></li>
             </ul>
         </nav>
     </div>
@@ -321,7 +336,7 @@
     </div>
 </div>
 <footer>
-    <p>© 2023 線上疫苗填寫系統. 版權所有.</p>
+    <p>© 2024 線上疫苗填寫系統. 版權所有.</p>
 </footer>
 <script>
     const video = document.getElementById('myVideo');
@@ -437,8 +452,8 @@
                 document.exitFullscreen();
             } else if (document.mozCancelFullScreen) {
                 document.mozCancelFullScreen();
-            } else if (document.webkitExitFullscreen) {
-                document.webkitExitFullscreen();
+            } else if (videoContainer.webkitExitFullscreen) {
+                videoContainer.webkitExitFullscreen();
             } else if (videoContainer.msRequestFullscreen) {
                 videoContainer.msRequestFullscreen();
             }

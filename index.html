@@ -1,4 +1,4 @@
-<html><head><base href="https://websimcreationengine.ai/">
+<html><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>線上疫苗填寫使用說明介紹影片 - 多畫質播放器</title>
@@ -47,9 +47,11 @@
         padding: 0 20px;
     }
 
-    .logo {
-        height: 30px;
-        width: auto;
+    .text-logo {
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
     }
 
     nav ul {
@@ -69,6 +71,10 @@
         font-weight: bold;
         transition: color 0.3s ease;
         font-size: 14px;
+    }
+
+    nav ul li a:hover {
+        color: var(--accent-color);
     }
 
     .container {
@@ -220,12 +226,8 @@
             padding: 10px 0;
         }
 
-        .logo {
-            height: 25px;
-        }
-
-        nav ul li a {
-            font-size: 12px;
+        .text-logo {
+            font-size: 18px;
         }
 
         body {
@@ -281,9 +283,11 @@
 <body>
 <header class="site-header">
     <div class="header-content">
+        <div class="text-logo">線上疫苗填寫系統</div>
         <nav>
             <ul>
-                <li><a href="">首頁</a></li>
+                <li><a href="https://websimcreationengine.ai/home">首頁</a></li>
+                <li><a href="https://websimcreationengine.ai/contact">聯絡我們</a></li>
             </ul>
         </nav>
     </div>
@@ -336,7 +340,7 @@
     </div>
 </div>
 <footer>
-    <p>© 2024 線上疫苗填寫系統. 版權所有.</p>
+    <p>© 202ˋ 線上疫苗填寫系統. 版權所有.</p>
 </footer>
 <script>
     const video = document.getElementById('myVideo');
